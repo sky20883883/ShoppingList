@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/recycler_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_recycler"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/recycler_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/recycler_item_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center|left"
+                android:text="任天堂SwitchOled"
+                android:textColor="@color/skyblue"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/recycler_count_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="7"
+                android:text="x20"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/recycler_money_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:layout_weight="6"
+                android:text="1020元"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.widget.Button
+        android:id="@+id/recycler_add_btn"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="match_parent"
+        android:textColor="@drawable/button_ok_text"
+        android:background="@drawable/button_ok"
+        android:textSize="@dimen/dp_16"
+        android:textStyle="bold"
+        android:text="編輯"
+        />
+    <android.widget.Button
+        android:id="@+id/recycler_delete_btn"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="match_parent"
+        android:textColor="@drawable/button_back_text"
+        android:background="@drawable/button_back"
+        android:textSize="@dimen/dp_16"
+        android:textStyle="bold"
+        android:text="刪除"
+        />
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
